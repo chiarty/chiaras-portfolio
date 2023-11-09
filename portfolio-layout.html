@@ -4,6 +4,8 @@
 <head>
 	<title>portfolio-layout</title>
 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,13 +107,19 @@
 			transition-duration: 0.2s;
 		}
 
+		@media (max-width: 600px) {
+			.body {
+			width: 100%;
+			}	
+		}
+
 	</style>
 </head>
 
 
 
 
-<body style=" 
+<body class="body" style=" 
 	margin: 0;
 	
 	font-family: bebas neue, arial;
