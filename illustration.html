@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>portfolio-layout</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		.portrait-column {}
+		.portrait {
+			width: 100%;
+		}
+
+		.portrait:hover {
+			border: solid 6px rgb(242, 151, 141, 0);
+			border-radius: 2px;
+			z-index: 100;
+		}
+		.portrait:active {
+			border: solid 3px rgb(242, 151, 141, 0);
+			border-radius: 2px;
+			transition-duration: 0.4sek;
+		}
+		.mail {
+			font-size: 1.3rem;
+			color: rgb(242, 151, 141, 1.0);
+			text-decoration: none;
+		}
+		.reiter {
+			text-decoration: none; 
+			font-size: 2rem; 
+			color: white;
+		}
+		.material-symbols-outlined{
+			color: rgb(242, 151, 141, 1.0);
+			text-decoration: none;
+		}
+		.project-thumbnail {
+			max-width: 250px;
+			min-width: 50px;
+			position: relative;
+		}
+		.project-picture {
+			width: 100%;
+			border-radius: 3px;
+		}
+		.logo-picture {
+			height: 54px;
+		}
+		.portfolio-header, .thats-me-header, .DE, .EN, .mail {
+			position: relative;
+		}
+		.portfolio-header::after, 
+		.thats-me-header::after,
+		.EN::after,
+		.DE::after,
+		.mail::after {
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			height: 4px;
+			width: 100%;
+			left: 0;
+			background-color: white;
+			transition: 0.3s;
+			transition-timing-function: ease-in-out;
+			transform: scaleX(0);
+		} 
+		.portfolio-header::after,
+		.DE::after {
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			height: 4px;
+			width: 100%;
+			left: 0;
+			background-color: white;
+			transition: 0.3s;
+			transition-timing-function: ease-in-out;
+			transform: scaleX(1);
+		}
+		.portfolio-header:hover::after, 
+		.thats-me-header:hover::after,
+		.DE:hover::after,
+		.EN:hover::after,
+		.mail:hover::after,
+		.material-symbols-outlined:hover::after {
+			transform: scaleX(1.0);
+		} 
+		.portfolio-header:active, 
+		.thats-me-header:active,
+		.DE:active,
+		.EN:active,
+		.project-thumbnail:active,
+		.mail:active,
+		.material-symbols-outlined:active {
+			opacity: 0.5;
+		}
+		.project-thumbnail,
+		.thats-me-header,
+		.DE,
+		.EN,
+		.mail,
+		.material-symbols-outlined,
+		.portfolio-header:hover {
+			cursor: pointer;
+		}
+		.name {
+			position: absolute;
+			background: rgba(30, 30, 30, 0.6);
+			inset: 0;
+			font-size: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: solid 6px rgb(242, 151, 141, 1.0);
+			border-radius: 2px;
+			opacity: 1;
+			color: white;
+		}
+		.project-thumbnail:hover .name {
+			opacity: 0;
+			transition-duration: 0.2s;
+		}
+
+		@media (max-width: 600px) {
+			.body {
+			width: 100%;
+			}	
+		}
+
+	</style>
+</head>
+
+
+
+
+<body class="body" style=" 
+	margin: 0;
+	
+	font-family: bebas neue, arial;
+	color: rgb(242, 151, 141, 1.0);
+	color: white;
+	background-color: black;
+	width: 100%;
+	">
+	
+
+
+
+
+	<header style="
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px 15px 41px;
+	height: 50px;
+	background-color: rgb(0, 0, 0, 1);
+	font-size: 1rem;
+	color: rgb(242, 151, 141, 1.0);
+	z-index: 100;
+	">
+		<div>
+			<a href="portfolio-layout.html" class="portfolio-header" style="display: inline-block; color: rgb(242, 151, 141, 1.0); text-decoration: none;">
+			Portfolio
+			</a> 
+			<p style="display: inline-block; padding: 0 0.5rem 0 0.5rem">
+			&#8226;
+			</p> 
+			<p class="thats-me-header" style="display: inline-block;">
+			That's me!
+			</p>
+		</div>
+		<div>
+		</div>
+		<div>
+			<p class="DE" style="display: inline-block; color: rgb(242, 151, 141, 1.0);
+				">
+			DE
+			</p> 
+			<p style="display: inline-block; padding: 0 0.5rem 0 0.5rem">
+			&#8226;
+			</p> 
+			<p class="EN" style="display: inline-block;">
+			EN
+			</p>
+		</div>
+	</header>
+
+
+
+
+
+
+
+	<div style="
+	padding: 100px 40px 100px 40px;">
+
+
+
+
+
+
+	<div style="margin-top: 35px;">
+	<p class="chiara" style="
+		font-size: 7rem; 
+		margin: 0; 
+		color: rgb(242, 151, 141, 1.0);
+		display: inline-block;
+		margin-right: 1rem;
+		background-color: black;
+		word-break: break-word;
+		">
+		Illustration
+	</p>
+
+	<p style="
+		margin: 0;
+		font-size: 2rem;
+		display: inline-block;
+		"> 
+		<a class="reiter" href="#portraits">Portraits</a> &#8226; <a class="reiter" href="#storytelling">Storytelling</a>
+	</p>
+	</div>
+
+
+	<p style="
+		margin: 0;
+		font-size: 2rem;
+		color: white;
+		padding-top: 5rem;
+		"
+		id="portraits"> 
+		Portraits
+	</p>
+	<p style="
+		margin: 0;
+		margin-bottom: 1rem;
+		font-size: 1rem;
+		color: white;
+		font-family: arial;
+		opacity: 0.7;
+		"> 
+		mostly digitally drawn works of family, friends and myself.
+	</p>
+
+
+		<div style="
+	display: flex;
+	justify-content: center;
+	align-items: center;">
+
+	<div style="
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	row-gap: 2em;
+	column-gap: 0.5em;
+	max-width: 850px;
+	">
+			
+
+		<div class="portrait-column">
+			<img class="portrait" src="illustration/lulu1.png">
+			<img class="portrait" src="illustration/lulu3.png">
+			<img class="portrait" src="illustration/nati.png">
+		</div>
+
+		<div class="portrait-column">
+			<img class="portrait" src="illustration/ali.png">
+			<img class="portrait" src="illustration/muddi.png">
+			<img class="portrait" src="illustration/emily.jpeg">
+		</div>
+
+		<div class="portrait-column">
+			<img class="portrait" src="illustration/ingwer.png">
+			<img class="portrait" src="illustration/lulu-fam.png">
+			<img class="portrait" src="illustration/halloween.png">
+			<img class="portrait" src="illustration/lulu2.jpeg">
+		</div>
+
+</div>
+</div>
+</div>
+
+<div id="storytelling" style="padding-top: 2.5rem;">
+<div style="
+padding-left: 40px;
+padding-right: 40px;
+background-color: rgb( 64, 102, 110, 1.0);
+">
+<p style="
+		margin: 0;
+		font-size: 2rem;
+		color: white;
+		background-color: rgb( 64, 102, 110, 1.0);
+		padding-top: 2em;
+		">
+		Storytelling &#8226; "Popping Bubbles"
+	</p>
+	<p style="
+		margin: 0;
+		font-size: 1rem;
+		color: white;
+		font-family: arial;
+		background-color: rgb( 64, 102, 110, 1.0);
+		opacity: 0.7;
+		"> 
+		a comic about predjudice and leaving the personal social bubble.
+	</p>
+
+	<div style="display: 
+		flex; justify-content: center; 
+		align-items: center; 
+		background-color: rgb( 64, 102, 110, 1.0);
+		width: 100%;
+		margin-bottom: 6rem;
+		">
+		<img style="width: 100%; max-width: 700px" src="illustration/bubble.png">
+		</div>
+</div>
+</div>
+
+</div>
+
+		<div style="
+			background-color: black;
+			height: 120px;
+			margin-top: 7rem;
+			margin-bottom: 5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			padding: 20px 40px 15px 41px;
+			height: 50px;
+			column-gap: 0.5em;
+			font-size: 1.3rem;
+			color: rgb(242, 151, 141, 1.0);
+			">
+				<a href="mailto:antchi13@gmail.com"  class="material-symbols-outlined">
+				mail
+				</a>
+			<a href="mailto:antchi13@gmail.com" class="mail">
+				antchi13@gmail.com
+			</a>
+		</div>
+
+
+</body>
+</html>
+
+
