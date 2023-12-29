@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>advertising</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		.reiter {
+			text-decoration: none; 
+			font-size: 2rem; 
+			color: rgb(242, 151, 141, 1.0);
+		}
+		.mail {
+			font-size: 1.3rem;
+			color: rgb(242, 151, 141, 1.0);
+			text-decoration: none;
+		}
+		.material-symbols-outlined{
+			color: rgb(242, 151, 141, 1.0);
+			text-decoration: none;
+		}
+		.text-gc {
+			margin: 0;
+			color: grey;
+			margin-right: 1rem;
+			font-family: arial;
+			padding: 1rem;
+			min-width: 247px;
+			background-color: lightgrey;
+		}
+		.project-thumbnail {
+			max-width: 250px;
+			min-width: 250px;
+			position: relative;
+			border: solid 4px rgb(242, 151, 141, 1.0);
+			border-radius: 2px;
+		}
+		.project-picture {
+			width: 100%;
+			border-radius: 3px;
+
+		}
+		.logo-picture {
+			height: 54px;
+		}
+		.portfolio-header, .thats-me-header, .DE, .EN, .mail {
+			position: relative;
+		}
+		.portfolio-header::after, 
+		.thats-me-header::after,
+		.EN::after,
+		.DE::after,
+		.mail::after {
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			height: 4px;
+			width: 100%;
+			left: 0;
+			background-color: black;
+			transition: 0.3s;
+			transition-timing-function: ease-in-out;
+			transform: scaleX(0);
+		} 
+		.DE::after {
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			height: 4px;
+			width: 100%;
+			left: 0;
+			background-color: black;
+			transition: 0.3s;
+			transition-timing-function: ease-in-out;
+			transform: scaleX(1);
+		}
+		.portfolio-header:hover::after, 
+		.thats-me-header:hover::after,
+		.DE:hover::after,
+		.EN:hover::after,
+		.mail:hover::after,
+		.material-symbols-outlined:hover::after {
+			transform: scaleX(1.0);
+		}
+		.portfolio-header:active, 
+		.thats-me-header:active,
+		.DE:active,
+		.EN:active,
+		.project-thumbnail:active,
+		.mail:active,
+		.material-symbols-outlined:active {
+			opacity: 0.5;
+		}
+		.project-thumbnail,
+		.thats-me-header,
+		.DE,
+		.EN,
+		.mail,
+		.material-symbols-outlined,
+		.portfolio-header:hover {
+			cursor: pointer;
+		}
+		.name {
+			position: absolute;
+			background: rgba(30, 30, 30, 0.6);
+			inset: 0;
+			font-size: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: solid 6px rgb(242, 151, 141, 1.0);
+			border-radius: 2px;
+			opacity: 1;
+			color: white;
+		}
+		.project-thumbnail:hover .name {
+			opacity: 0;
+			transition-duration: 0.2s;
+		}
+
+		@media (max-width: 600px) {
+			.body {
+			width: 100%;
+			}	
+		}
+
+	</style>
+</head>
+
+
+
+
+<body class="body" style=" 
+	margin: 0;
+	
+	font-family: bebas neue, arial;
+	color: rgb(242, 151, 141, 1.0);
+	color: black;
+	background-color: white;
+	width: 100%;
+	">
+	
+
+
+
+
+	<header style="
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px 15px 41px;
+	height: 50px;
+	background-color: white;
+	font-size: 1rem;
+	color: rgb(242, 151, 141, 1.0);
+	z-index: 100;
+	">
+		<div>
+			<a href="portfolio-layout.html" class="portfolio-header" style="display: inline-block; color: rgb(242, 151, 141, 1.0); text-decoration: none;">
+			Portfolio
+			</a> 
+			<p style="display: inline-block; padding: 0 0.5rem 0 0.5rem">
+			&#8226;
+			</p> 
+			<p class="thats-me-header" style="display: inline-block;">
+			That's me!
+			</p>
+		</div>
+		<div>
+		</div>
+		<div>
+			<p class="DE" style="display: inline-block; color: rgb(242, 151, 141, 1.0);
+				">
+			DE
+			</p> 
+			<p style="display: inline-block; padding: 0 0.5rem 0 0.5rem">
+			&#8226;
+			</p> 
+			<p class="EN" style="display: inline-block;">
+			EN
+			</p>
+		</div>
+	</header>
+
+
+
+
+
+
+
+	<div style="
+	padding: 100px 40px 0px 40px;">
+
+
+
+
+
+
+	<div style="margin-top: 35px; margin-bottom: 8.5rem;">
+	<p class="title" style="
+		font-size: 7rem; 
+		word-break: break-word;
+		margin: 0; 
+		color: rgb(242, 151, 141, 1.0);
+		display: inline-block;
+		margin-right: 1rem;
+		background-color: white;
+		">
+		Advertising
+	</p>
+
+	<p style="
+		margin: 0;
+		font-size: 2rem;
+		display: inline-block;
+		color: rgb(242, 151, 141, 1.0);
+		"> 
+		<a class="reiter" href="#Werkshau">Werkschau</a> &#8226; <a class="reiter" href="#Greenconstructions">GreenConstructions</a>
+	</p>
+	</div>
+
+
+
+
+
+
+
+
+<div id="Werkshau" style="display: flex; justify-content: center; padding-top: 2rem;">
+	<div class="project-grid" style="
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			row-gap: 2em;
+			column-gap: 1em;
+			justify-content: space-evenly;
+			max-width: 850px;
+			background-color: white;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			">
+			
+			<div style="max-width: 850px;">
+				<video width="100%" autoplay="" muted="" loop="">
+				<source type="video/mp4" src="advertising/auge.mp4">
+				</video>
+			</div>
+		</div>
+
+</div>
+
+
+
+
+
+<div style="display: flex; justify-content: center; margin-top: 25px;">
+	<div class="project-grid" style="
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			row-gap: 2em;
+			column-gap: 1em;
+			justify-content: space-between;
+			max-width: 850px;
+			background-color: white;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			">
+			
+			<p style="max-width: 850px; font-family: arial; font-weight: bold; color: grey;">
+				Im dritten Semester wurde uns die Möglichkeit geboten, für die alljähliche Werkshau unserer Hochschule eine Werbekampagne zu gestalten. <a style="color: rgb(242, 151, 141, 1.0);" class="link" href="https://selinaweiss9ca4.myportfolio.com/work"> Selina Weiß</a> und ich haben gemeinsam unter dem Letitsatz "Das Auge isst mit" eine Plakatserie mit Animation erstellt.
+			</p>
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+	<div style="display: flex; justify-content: center; margin-top: 25px;">
+	<div class="project-grid" style="
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			row-gap: 2em;
+			column-gap: 1em;
+			justify-content: space-evenly;
+			max-width: 850px;
+			background-color: white;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			">
+			<div class="project-thumbnail">
+				<img class="project-picture" src="advertising/auge1.jpg">
+			</div>
+			<div class="project-thumbnail">
+				<img class="project-picture" src="advertising/auge2.jpg">
+			</div>
+			<div class="project-thumbnail">
+				<img class="project-picture" src="advertising/auge3.jpg">
+			</div>
+		</div>
+
+</div>
+
+
+
+
+
+
+<div id="Greenconstructions" style="margin-top: 5rem; padding-top: 5rem;">
+
+
+	<img style="max-width: 100%;" src="advertising/header.png">
+
+	
+	<div style="
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		">
+			<div style="
+			width: 400px;
+			margin-right: 2rem;
+			">
+			<p style="
+				color: grey;
+				margin-right: 1rem;
+				background-color: lightgrey;
+				font-family: arial;
+				max-width: 400px;
+				padding: 1rem;
+				min-width: 247px;
+				">
+				Eine fiktive Firma, die im Rahmen eines Hochschulprojekts in enger zusammenarbeit mit <a style="color: rgb(38, 62, 14, .7);" class="link" href="https://selinaweiss9ca4.myportfolio.com/work"> Selina Weiß</a> entstanden ist. <br> Das Ziel war eine Corporate Identity zu schaffen mit Logo, Slogan, Leistungsmix und Zielgruppenanalyse.
+			</p>
+			<p style="
+				margin: 0;
+				color: grey;
+				margin-right: 1rem;
+				background-color: lightgrey;
+				font-family: arial;
+				padding: 1rem;
+				min-width: 247px;
+				">
+				Greenconstructions ist ein Planungsbüro für nachhaltigen Städtebau, um das Ziel der sozialgerechten, klimaschonenden und wiederstandsfähigen Stadtentwicklung voranzutreiben. 
+			</p>
+			</div>
+
+			<div style="
+			flex: 1;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			position: relative;
+			"> 
+			<div>
+			<img style="flex-wrap: wrap; width: 100%; max-width: 600px; min-width: 200px; padding-top: 2rem;" src="advertising/color.png">
+			<!--<p style="font-family: arial; color: rgb(38, 62, 14, 1); position: absolute; top:-10; left: 20;">
+				Hausfarben
+			</p>*-->
+		 	</div>
+		 </div>
+
+		 	
+	</div>
+
+
+
+		<div style="
+			margin-top: 5.5rem;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		">
+			<div style="
+			flex: 1;
+			margin-right: 2rem;
+			max-width: 500px;
+			min-width: 300px;
+			">
+			<p style="
+			color: rgb(24, 53, 15, 1.0);
+			background-color: rgb(93, 126, 94, 1.0);
+			font-family: arial;
+			padding: 1rem;
+			max-width: 350px;
+			">
+			Logo Konzept
+			</p>
+			<img width="100%" src="advertising/logo_test.png">
+
+
+			</div>
+			<div style="
+			flex: 1;
+			"> 
+			<p style="
+			color: rgb(24, 53, 15, 1.0);
+			background-color: rgb(93, 126, 94, 1.0);
+			font-family: arial;
+			padding: 1rem;
+			max-width: 350px;
+			">
+			Name und Slogan
+			</p>
+			<p class="text-gc">
+			⌂ Grünquadrate
+			</p>			
+			<p class="text-gc">
+			⌂ Fairplan(t)
+			</p>
+			<p class="text-gc">
+			⌂ Plan Green
+			</p>
+			<p style="margin-top: 2rem;" class="text-gc">
+			⌂ we plan your city green
+			</p>
+			<p class="text-gc">
+			⌂ Nachhalting bis ins letzte Quadrat
+			</p>
+			<p class="text-gc">
+			⌂ Nachhaltiges Planen und Bauen in den Quadraten, aus den Quadraten
+			</p>
+
+		 </div>
+		 </div>
+
+
+
+
+
+		 <div style="display: flex; justify-content: center; align-items: center; margin-top: 4rem;
+		 ">
+		 <img style="
+		 	border: solid 0.19em rgb(93, 126, 94, 1.0);
+		 	border-radius: 2px; 
+		 	padding: 2em; 
+		 	max-width: 700px;" 
+		 	width="85%" src="advertising/final.png">
+		</div>
+
+
+
+
+
+
+<div style="
+	margin-top: 8rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: center;
+	row-gap: 3rem;
+	">
+	<div style="
+	flex: 1;
+	max-width: 350px;
+	min-width: 300px;
+	">
+		<p style="
+		color: rgb(24, 53, 15, 1.0);
+		background-color: rgb(93, 126, 94, 1.0);
+		font-family: arial;
+		padding: 1em;
+		max-width: 350px;
+		margin-bottom: 4em;
+		">
+		Plakate
+		</p>
+		<img width="100%" src="advertising/plakatideen1.png">
+	</div>
+
+	<div style="
+	flex: 2;
+	max-width: 450px;
+	min-width: 370px;
+	"> 
+	<img width="100%" src="advertising/plakat1.png">
+	 </div>
+ </div>
+
+
+
+
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 4rem;
+		 ">
+		 <img style="
+		 	max-width: 770px;"
+		 	width="100%" src="advertising/plakat2.png">
+		</div>
+
+
+
+
+
+
+		<div style="
+			background-color: white;
+			height: 120px;
+			margin-top: 7rem;
+			margin-bottom: 5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			padding: 20px 40px 15px 41px;
+			height: 50px;
+			column-gap: 0.5em;
+			font-size: 1.3rem;
+			color: rgb(242, 151, 141, 1.0);
+			">
+				<a href="mailto:antchi13@gmail.com"  class="material-symbols-outlined">
+				mail
+				</a>
+			<a href="mailto:antchi13@gmail.com" class="mail">
+				antchi13@gmail.com
+			</a>
+		</div>
+
+
+</body>
+</html>
+
+
+
+
+
